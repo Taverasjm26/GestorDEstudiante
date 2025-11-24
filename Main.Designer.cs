@@ -68,7 +68,7 @@
             GroupBox.Size = new Size(857, 314);
             GroupBox.TabIndex = 0;
             GroupBox.TabStop = false;
-            GroupBox.Text = "Gestor Estudiantes";
+            GroupBox.Text = "Gestor Estudiantes v2";
             // 
             // BtnLimpiar
             // 
@@ -157,7 +157,7 @@
             // 
             TxtId.Location = new Point(123, 60);
             TxtId.Name = "TxtId";
-            TxtId.Size = new Size(49, 34);
+            TxtId.Size = new Size(89, 34);
             TxtId.TabIndex = 3;
             // 
             // LblName
