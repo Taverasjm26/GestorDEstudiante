@@ -57,7 +57,7 @@ namespace GestorDeEstudiantes
             DgvEstudiantes.ClearSelection();
         }
 
-        // ====== BOTÓN AGREGAR ======
+        // ====== BOTÃN AGREGAR ======
         private void BtnAgregar_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrWhiteSpace(TxtNombre.Text))
@@ -87,7 +87,7 @@ namespace GestorDeEstudiantes
             LimpiarCampos();
         }
 
-        // ====== BOTÓN ACTUALIZAR ======
+        // ====== BOTÃN ACTUALIZAR ======
         private void BtnActualizar_Click(object sender, EventArgs e)
         {
             if (!int.TryParse(TxtId.Text, out int id))
@@ -122,7 +122,7 @@ namespace GestorDeEstudiantes
                     int filas = cmd.ExecuteNonQuery();
                     if (filas == 0)
                     {
-                        MessageBox.Show("No se encontró un estudiante con ese Id en la base de datos.");
+                        MessageBox.Show("No se encontrÃ³ un estudiante con ese Id en la base de datos.");
                     }
                 }
             }
@@ -130,7 +130,7 @@ namespace GestorDeEstudiantes
             CargarEstudiantes();
         }
 
-        // ====== BOTÓN ELIMINAR ======
+        // ====== BOTÃN ELIMINAR ======
         private void BtnEliminar_Click(object sender, EventArgs e)
         {
             if (!int.TryParse(TxtId.Text, out int id))
@@ -139,7 +139,7 @@ namespace GestorDeEstudiantes
                 return;
             }
 
-            var confirm = MessageBox.Show("¿Seguro que deseas eliminar este estudiante?",
+            var confirm = MessageBox.Show("Â¿Seguro que deseas eliminar este estudiante?",
                                           "Confirmar",
                                           MessageBoxButtons.YesNo,
                                           MessageBoxIcon.Question);
@@ -160,7 +160,7 @@ namespace GestorDeEstudiantes
 
                     if (filas == 0)
                     {
-                        MessageBox.Show("No se encontró un estudiante con ese Id en la base de datos.");
+                        MessageBox.Show("No se encontrÃ³ un estudiante con ese Id en la base de datos.");
                     }
                 }
             }
@@ -169,7 +169,7 @@ namespace GestorDeEstudiantes
             LimpiarCampos();
         }
 
-        // ====== BOTÓN LIMPIAR ======
+        // ====== BOTÃN LIMPIAR ======
         private void BtnLimpiar_Click(object sender, EventArgs e)
         {
             LimpiarCampos();
