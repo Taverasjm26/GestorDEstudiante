@@ -194,7 +194,8 @@ namespace GestorDeEstudiantes
 
         private void Main_Load(object sender, EventArgs e)
         {
-            
+            MessageBox.Show("Bienvenido al Gestor de Estudiantes");
+
 
         }
 
